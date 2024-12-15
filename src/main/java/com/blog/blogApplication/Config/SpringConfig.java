@@ -34,11 +34,7 @@ public class SpringConfig  implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-<<<<<<< Updated upstream
-                .allowedOrigins("http://localhost:5173","https://blog-sooty-theta-55.vercel.app/")
-=======
                 .allowedOrigins("http://localhost:5173", "https://blog-sooty-theta-55.vercel.app/")
->>>>>>> Stashed changes
                 .allowedMethods("GET", "POST", "PUT", "DELETE","PATCH", "OPTIONS")
                 .allowedHeaders("Authorization", "*")
                 .allowCredentials(true);
@@ -93,11 +89,8 @@ public class SpringConfig  implements WebMvcConfigurer {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-<<<<<<< Updated upstream
         configuration.setAllowedOrigins(Arrays.asList("http://localhost:5173","https://blog-sooty-theta-55.vercel.app/"));
-=======
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:5173", "https://blog-sooty-theta-55.vercel.app/"));
->>>>>>> Stashed changes
+
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(Arrays.asList("*"));
         configuration.setAllowCredentials(true);
