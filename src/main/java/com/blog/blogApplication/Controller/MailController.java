@@ -34,11 +34,7 @@ import java.util.HashMap;
 import java.util.Objects;
 import java.util.Optional;
 
-<<<<<<< Updated upstream
 @CrossOrigin( origins = {"http://localhost:5173","https://blog-sooty-theta-55.vercel.app/"})
-=======
-@CrossOrigin(origins = {"http://localhost:5173", "https://blog-sooty-theta-55.vercel.app/"})
->>>>>>> Stashed changes
 
 @Service
 public class MailController {

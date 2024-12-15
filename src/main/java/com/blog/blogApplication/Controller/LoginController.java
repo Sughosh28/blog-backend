@@ -9,11 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-<<<<<<< Updated upstream
-@CrossOrigin( origins = {"http://localhost:5173","https://blog-sooty-theta-55.vercel.app/"})
-=======
+
 @CrossOrigin(origins = {"http://localhost:5173", "https://blog-sooty-theta-55.vercel.app/"})
->>>>>>> Stashed changes
 @RestController
 public class LoginController {
     @Autowired
